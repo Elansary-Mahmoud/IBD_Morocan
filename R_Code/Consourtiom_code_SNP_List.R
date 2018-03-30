@@ -1,0 +1,11 @@
+args <- commandArgs(trailingOnly = TRUE)
+Disease_name = as.character(args[1])
+country = as.character(args[2])
+S = as.numeric(as.character(args[3]))
+print(paste(Disease_name,country,S,sep="_"))
+load(paste(country,"_",Disease_name,"_",S,".RData",sep=""))
+write.table(cbind(orignial_sum,(sum(simulation_hist >= orignial_sum) + 1)/(1000 + 1)),file=paste(country,"_",Disease_name,"_",S,"_original_SNPs.txt",sep=""),quote=F,row.names=F,col.names=F)
+SNP_List = read.table(paste(country,"_",Disease_name,"_",S,"_SNPs.txt",sep=""),header=F)	
+SNP_List[,2] = as.character(temp$SNP[1:nrow(SNP_List)])
+write.table(SNP_List,file=paste(country,"_",Disease_name,"_",S,"_SNPs_v2.txt",sep=""),quote=F,row.names=F,col.names=F)
+
