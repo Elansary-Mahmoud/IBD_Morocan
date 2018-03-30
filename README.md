@@ -13,6 +13,7 @@ We aimed to investigate the 163 known loci and top SNP associated with inflammat
 <p align="justify">
 We genotyped 549 non- Caucasian Moroccan individuals with 285 IBD patients (211 Crohn's disease (CD), 63 Ulcerative colitis (UC) and 11 Indeterminate colitis (IC)) and 264 controls on custom designed Immunochips from ILLUMINA®. We considered the 163 loci and top SNPs associated with IBD in Caucasian individuals and negative controls matched for the minor allele frequencies (MAF). After quality controls, association analysis was done using PLINK and population stratification was corrected using the first five principal components as covariates. Simulation tests with random groups of SNP (outside the 163 loci and matched for MAF) and regions (outside the 163 IBD loci and matched for the number of independent tests) were used to test the significance of the results.
 </p>
+
 ## Results
 We identified 10 regions significantly associated with IBD and UC (Table1).
 
